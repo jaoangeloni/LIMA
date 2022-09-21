@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+.bloco {
+    padding-top: 20px;
+    width: 50vw;
+    height: 10vh;
+    border: 2px solid orange;
+    border-radius: 25px;
+}
+
+.menu li{
+    margin-left: 20px;
+    float: left;
+}
+
+img{
+    width: 100px;
+    float: left;
+}
+
+ul{
+    margin: 30px;
+    list-style: none;
+}
+
+.exemplo{
+    width: 90vw;
+    height: 50vh;
+    margin: 30px;
+    border: 2px solid orange;
+    border-radius: 25px;
+}
+
+.exemplo > div{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border: 2px solid orange;
+    border-radius: 25px;
+}
+
+.exemplo > #caixa2{
+    background-color: gold;
+}
+
+.exemplo > #circulo{
+    border-radius: 50%;
+    background-color: blue;
+}

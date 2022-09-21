@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+     background: rgb(42, 46, 46);
+}
+
+#circulo{
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(rgb(40, 241, 131),rgb(14, 131, 92));
+    border-radius: 50px; 
+}
+
+.linha{
+    width: 100vw;
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#l1{justify-content: space-around;}
+#l2{justify-content: space-between;}
+#l3{justify-content: space-evenly;}
+
