@@ -17,7 +17,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 50px 100px;
+    padding: 2% 5%;
     width: 100%;
     top: 0;
     left: 0;
@@ -83,12 +83,8 @@ section #moon{
     left: -50%;
     width: 200%;
     mix-blend-mode:screen;
+    animation: rising 3s;
     animation: moon 5s linear infinite;
-}
-
-@keyframes upmoon{
-    from{top: -100%;}
-    to{top: 15%}
 }
 
 @keyframes moon{
@@ -98,8 +94,7 @@ section #moon{
       50% {
         transform: translateY(20px);
       }
-    }
-
+}
 
 section #mount{
     position: absolute;
@@ -146,7 +141,7 @@ main{
     text-shadow: 0px 0px 5px wheat;
     background-color: #0E0E0E;
     border-radius: 50px;
-    font-size: 40px;
+    font-size: 30px;
     letter-spacing: 5px;
 }
 
@@ -213,7 +208,7 @@ ul #l4{
     text-shadow: 0px 0px 5px wheat;
     background-color: #0E0E0E;
     border-radius: 50px;
-    font-size: 30px;
+    font-size: 20px;
     letter-spacing: 5px;
 }
 

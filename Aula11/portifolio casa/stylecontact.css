@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100&family=Roboto+Condensed:ital@1&family=Smooch&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'JetBrains Mono', monospace;
+}
+body
+{
+    min-height: 100vh;
+    overflow: hidden;
+}
+.bg
+{
+    position: absolute;
+    top: -100%;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(#26084e, #0c41ee);
+    animation: body 2.5s;
+    z-index: -100;
+}
+@keyframes body
+{
+    from{top: 0%;}
+}
+.bg2
+{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(#0c41ee, #f3c8a4);
+    animation: body2 2.5s;
+    z-index: -100;
+}
+@keyframes body2{
+    from{top: 100%;}
+}
+header
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.875rem 4.375rem;
+    animation: names 1s;
+}
+@keyframes names
+{
+    from{opacity: 0;}
+}
+header img
+{
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    height: 5rem;
+}
+header ul
+{
+    display: flex;
+}
+header li
+{
+    font-size: 1.3rem;
+    margin-left: 11.3rem;
+}
+header li a
+{
+    text-decoration: none;
+    font-weight: bold;
+    color: #00ff84;
+    text-shadow: 0rem 0rem 0.2rem #00ff84;
+    animation: names 2s;
+}
+@keyframes names
+{
+    from{opacity: 0;}
+}
+header li a:hover
+{
+    font-weight: bold;
+    color: #F44381;
+    text-shadow: 0rem 0rem 0.1rem #F44381;
+}
+
+
+
+section
+{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    overflow: hidden;
+}
+section #sky
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: -2;
+    animation:sky 1s;
+}
+@keyframes sky
+{
+    from {opacity: 60%;}
+
+}
+section #moon
+{
+    position: absolute;
+    top: -100%;
+    left: -50%;
+    width: 200%;
+    z-index: -1;
+    mix-blend-mode:screen;
+    animation: moon 3s;
+}
+@keyframes moon
+{
+    from{top: -25%;}
+}
+section #sun{
+    position: absolute;
+    top: 15%;
+    left: 25%;
+    width: 50%;
+    z-index: -1;
+    border-radius: 40%;
+    filter: brightness(110%) saturate(30%);
+    animation: sun 3s;
+}
+@keyframes sun
+{
+    from{top: 100%;}
+}
+.clouds
+{
+    position: relative;
+    background:url(assets/clouds.png) repeat-x 0 / 100% auto;
+    height:100%;
+    transform: scale(1.3);
+    top: 10%;
+    opacity: 30%;
+    filter: hue-rotate(90deg)brightness(100);
+    animation: clouds 30s linear infinite,up 2s;
+}
+@keyframes up
+{
+    from{top: 30%;filter: hue-rotate(50deg);}
+}
+@keyframes clouds
+{
+    0%{background-position: 0 0;}
+    100%{background-position: 100vw 0;}
+}
+section #mount
+{
+    position: absolute;
+    width: 100%;
+    bottom: -50%;
+    z-index: 2;
+    filter: hue-rotate(60deg) brightness(30%)saturate(3);
+    animation: mountain 1s
+}
+@keyframes mountain
+{
+    0% {filter: hue-rotate(100deg) brightness(25%)saturate(3)}
+    100% {filter: hue-rotate(60deg) brightness(30%)saturate(3)}
+}
