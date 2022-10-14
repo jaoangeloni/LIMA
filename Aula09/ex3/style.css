@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style:none;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+header{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+header img{
+    margin-left: 100px;
+    width: 100px;
+}
+header div{
+    display: flex;
+    align-items: center;
+}
+header ul{
+    display: flex;
+    margin-right: 100px;
+}
+
+header ul li{
+    margin-right: 50px;
+    border: 2px solid gray;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+header ul li:hover{
+    cursor: pointer;
+    color: white;
+    background-color: gray;
+}
+
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 70vh;
+    padding: 200px;
+    margin-top: 200px;
+}
+
+section img{
+    width: 1000px;
+}
+
+section #title{
+    font-size: 50px;
+    color: darkblue;
+}
+
+section #content{
+    font-size: 35px;
+    margin-top: 30px;
+}
+
+section button{
+    margin-top: 30px;
+    color: white;
+    background-color: darkblue;
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+@media(max-width: 750px){
+    header ul{
+        display: none;
+    }
+    header{
+        justify-content: center;
+        align-items: center;
+    }
+    header img{
+        margin-left: 0;
+    }
+    section{
+        height: 15vh;
+        margin-top: 100px;
+        justify-content: center;
+        padding: 10px;
+    }
+    section img{
+        width: 200px;
+    }
+    section #title{
+        font-size: 15px;
+    }
+    section #content{
+        font-size: 10px;
+    }
+    section button{
+        padding: 5px;
+    }
+}

@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100&family=Roboto+Condensed:ital@1&family=Smooch&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+body{
+    min-height: 100vh;
+    background: linear-gradient(#1b191a, #26084e);
+}
+
+header{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 100px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+}
+
+header img{
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    height: 100px;
+    animation: gengar 10s linear infinite;
+}
+
+header ul{
+    display: flex;
+    font-size: 24px;
+}
+
+header li{
+    font-weight: bold;
+    font-size: 30px;
+    margin-left: 250px;
+}
+
+header li a{
+    text-decoration: none;
+    color: #2BF494;
+    text-shadow: 0px 0px 15px #2BF494;
+}
+
+header li a:hover{
+    font-weight: 1;
+    color: #F44381;
+    text-shadow: 0px 0px 15px #F44381;
+}
+
+section{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+section #sky{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -100;
+    animation-name: sky;
+    animation-duration: 1s;
+}
+
+@keyframes sky{
+    from {top: -100%;}
+    to {top: 0%}
+}
+
+section #moon{
+    position: absolute;
+    top: 15%;
+    left: -50%;
+    width: 200%;
+    mix-blend-mode:screen;
+    animation: moon 5s linear infinite;
+}
+
+@keyframes upmoon{
+    from{top: -100%;}
+    to{top: 15%}
+}
+
+@keyframes moon{
+    0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(20px);
+      }
+    }
+
+
+section #mount{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: -45%;
+    filter: hue-rotate(140deg) brightness(15%)saturate(3);
+    animation-name: mountain;
+    animation-duration: 2s;
+}
+
+@keyframes mountain{
+    from {bottom: -100%;}
+    to {bottom: -45%;}
+}
+
+main{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px;
+    z-index: 100;
+}
+
+.box1{
+    width: 50%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+}
+.box1 ul{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.box1 li{
+    padding-left: 30px;
+    padding-right: 0px;
+    color: antiquewhite;
+    text-shadow: 0px 0px 5px wheat;
+    background-color: #0E0E0E;
+    border-radius: 50px;
+    font-size: 40px;
+    letter-spacing: 5px;
+}
+
+ul #l1{
+    width: 23vw;
+}
+ul #l2{
+    width: 21vw;
+}
+ul #l3{
+    width: 30vw;
+}
+ul #l4{
+    width: 30vw;
+}
+
+.box2{
+    display: flex;
+    width: 40%;
+    height: 60%;
+}
+
+.box2 #div{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.box2 .divs{
+    width: 100px;
+    height: 100px;
+    background-color: #0E0E0E;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    
+}
+
+.box2 #c1 img{
+    width: 3vw;
+}
+.box2 #c2 img{
+    width: 4vw;
+}
+.box2 #c3 img{
+    width: 3.5vw;
+}
+
+.box2 ul{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+
+.box2 li{
+    padding-left: 30px;
+    padding-right: 20px;
+    color: antiquewhite;
+    text-shadow: 0px 0px 5px wheat;
+    background-color: #0E0E0E;
+    border-radius: 50px;
+    font-size: 30px;
+    letter-spacing: 5px;
+}
+
+.box2 #bl1{
+    width: 26vw;
+}
+
+.box2 #bl2{
+    width: 19vw;
+}
+
+.box2 #bl3{
+    width: 23vw;
+}
+
+footer{
+    position: absolute;
+    width: 100%;
+    padding: 50px 100px;
+    bottom: 0;
+    z-index: 10000;
+}
+
+
+footer img{
+    width: 70px;
+}
+
+footer img:hover{
+    filter: hue-rotate(185deg) brightness(200%);
+}
+
+footer div{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+footer p{
+    
+    font-weight: bold;
+    color: #2BF494;
+    text-shadow: 0px 0px 10px #2BF494;
+}

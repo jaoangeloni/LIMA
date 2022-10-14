@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100&family=Roboto+Condensed:ital@1&family=Smooch&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'JetBrains Mono', monospace;
+}
+body
+{
+    min-height: 100vh;
+    overflow: hidden;
+}
+.bg
+{
+    position: absolute;
+    top: -100%;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(#1b191a, #26084e);
+    animation: body 2.5s;
+    z-index: -100;
+}
+@keyframes body
+{
+    from{top: 0%;}
+}
+.bg2
+{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(#26084e, #0c41ee);
+    animation: body2 2.5s;
+    z-index: -100;
+}
+@keyframes body2{
+    from{top: 100%;}
+}
+header
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.875rem 4.375rem;
+}
+header img
+{
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    height: 5rem;
+}
+header ul
+{
+    display: flex;
+}
+header li
+{
+    font-size: 1.3rem;
+    margin-left: 11.3rem;
+}
+header li a
+{
+    text-decoration: none;
+    font-weight: bold;
+    color: #2BF494;
+    text-shadow: 0rem 0rem 0.3rem #2BF494;
+    animation: names 1s;
+}
+@keyframes names
+{
+    from{opacity: 0;}
+}
+header li a:hover
+{
+    font-weight: bold;
+    color: #F44381;
+    text-shadow: 0rem 0rem 0.3rem #F44381;
+}
+
+
+
+section
+{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    overflow: hidden;
+}
+section #sky
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 60%;
+    z-index: -2;
+    animation:sky 4s;
+}
+@keyframes sky
+{
+    from{opacity: 100%;}
+}
+section #moon
+{
+    position: absolute;
+    top: -25%;
+    left: -50%;
+    width: 200%;
+    z-index: -1;
+    mix-blend-mode:screen;
+    animation: moon 3s;
+}
+@keyframes moon
+{
+    from{top: 15%;}
+}
+.clouds
+{
+    position: relative;
+    background:url(assets/clouds.png) repeat-x 0 / 100% auto;
+    height:100%;
+    transform: scale(1.3);
+    top: 20%;
+    opacity: 50%;
+    filter: hue-rotate(50deg);
+    animation: clouds 30s linear infinite, up 2s;
+}
+@keyframes up
+{
+    from{top: 30%;filter: hue-rotate(120deg);}
+}
+@keyframes clouds
+{
+    0%{background-position: 0 0;}
+    100%{background-position: 100vw 0;}
+}
+section #mount
+{
+    position: absolute;
+    width: 100%;
+    left: 0%;
+    bottom: -10%;
+    z-index: 2;
+    filter: hue-rotate(80deg) brightness(60%);
+    animation: mountain 3s;
+}
+@keyframes mount
+{
+        0% {filter: hue-rotate(130deg) brightness(20%);}
+        100% {filter: hue-rotate(80deg) brightness(60%);}
+}
+main
+{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    z-index: 100;
+}
+main #p1
+{  
+    position: absolute;
+    top: 20%;
+    font-size: 5rem;
+    color: #fb3483;
+    text-shadow: 0rem 0rem 0.3rem #fb3483;
+    font-weight: bold;
+}
+#p2
+{
+    position: absolute;
+    top: 40%;
+    font-size: 3rem;
+    color: #fb3483;
+    text-shadow: 0rem 0rem 0.3rem #fb3483;
+    font-weight: bold;
+}
+main span
+{
+    color: #fb3483;
+    text-shadow: 0rem 0rem 0.3rem #fb3483;
+    animation: degrade 3s linear infinite;
+}
+main a
+{
+    text-decoration: none;
+}
+main img
+{
+    position: relative;
+    top: 55%;
+    width: 7rem;
+    animation: degrade 3s linear infinite,rising 2s;
+}
+@keyframes rising
+{
+    from{top: 100%;}
+}
+@keyframes degrade
+{
+    0%{filter: hue-rotate(0deg) brightness(300%);}
+    25%{filter: hue-rotate(90deg) brightness(300%);}
+    50%{filter: hue-rotate(180deg) brightness(300%);}
+    75%{filter: hue-rotate(270deg) brightness(300%);}
+    100%{filter: hue-rotate(360deg) brightness(300%);}
+}

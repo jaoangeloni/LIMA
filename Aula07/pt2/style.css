@@ -1,0 +1,32 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    background-color: green;
+    width: 100vw;
+    height: 70vh;
+}
+
+
+#q1{
+    width: 100vw;
+    height: 15vh;
+    background-color: pink;
+    border: 3px solid black;
+}
+
+#q2{
+    position: absolute;
+    bottom: 0%;
+    width: 100vw;
+    height: 15vh;
+    background-color: yellow;
+    border: 3px solid black;
+}
+
+#q3{
+    width: 20vw;
+    height: 70vh;
+    background-color: red;
+    border: 3px solid black;
+}
+
