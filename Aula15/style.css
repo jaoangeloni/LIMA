@@ -1,24 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100&family=Roboto+Condensed:ital@0;1&family=Smooch&family=VT323&display=swap');
 *
 {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'JetBrains Mono', monospace;
+    letter-spacing: -3px;
+}
+body
+{
+    
+    background-color: #e6d7bb;
 }
 header
 {
-    width: 100%;
-    height: 10vh;
+    height: 20vh;
+    margin: 50px 200px;
+    padding: 0px 50px 25px 50px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    background-color: rgb(168, 219, 48);
+    justify-content: space-between;
+    border-radius: 32px;
+    background-color: #00B2FF;
+    box-shadow: inset 0px -20px 0px #177cff;
 }
 header input
 {
     outline: none;
     border: none;
-    padding: 10px;
+    padding: 20px;
     border-radius: 100px;
-    width: 250px;
+    font-size: 20px;
+    width: 265px;
+    box-shadow: inset 0px -5px 0px rgb(207, 207, 207);
+}
+header input:hover
+{
+    transform: translate(0, 5px);
+}
+header img
+{
+    width: 110px;
+    cursor: pointer;
+}
+header img:hover
+{
+    transform: translate(0, 5px);
+}
+header p
+{
+    color: white;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 60px;
+    text-shadow: 0px 3px 0px #969696;
+    cursor: pointer;
+}
+header p span
+{
+    font-weight: 700;
+    color: #F56300;
+    text-shadow: 0px 3px 0px #ad2800;
+    cursor: pointer;
+}
+header p:hover
+{
+    transform: translate(0, 5px);
+}
+.text
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: bold;
+    color: #00B2FF;
+    text-shadow: 0px 2px 0px #177cff;
+}
+.text span
+{
+    color: #F56300;
+    text-shadow: 0px 3px 0px #ad2800;
+    cursor: pointer;  
+}
+
+main
+{
+    gap: 100px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 50px 200px;
+    grid-template-areas: "card1" "card2" "card3";
+}
+#card1
+{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 50px;
+    grid-template-areas: "ad box" "ad box2";
+    grid-area: card1;
+}
+#card2
+{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 50px;
+    grid-template-areas: "box ad" "box2 ad";
+    grid-area: card2;
+}
+#card3
+{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 50px;
+    grid-template-areas: "ad box" "ad box2";
+    grid-area: card3;
+}
+.ad
+{
+    border-radius: 20px;
+    grid-area: ad;
+    cursor: pointer;
+}
+.ad img
+{
+    border-radius: 20px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.box
+{
+    display: grid;
+    grid-template-columns: 1.3fr 3fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    padding:40px 40px 80px 40px ;
+    grid-area: box;
+    border-radius: 30px;
+    grid-template-areas: "img title" "img subt";
+    background: #ff9249;
+    box-shadow: inset 0px -50px 0px #F56300;
+}
+.box:hover
+{
+    transform: translate(0, 10px);
+    cursor: pointer;
+}
+.img
+{
+    box-shadow: inset 0px -30px 0px #f37558;
+    grid-area: img;
+    border-radius: 20px;
+}
+.img img
+{
+    border-radius: 20px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.title
+{
+    grid-area: title;
+    font-size: 40px;
+    font-weight: 700;
+    padding: 10px 20px 40px 20px;
+    border-radius: 20px;
+    background: #e6d7bb;
+    box-shadow: inset 0px -30px 0px #ff9100;
+    border: 2px solid #F56300;
+}
+.subtitle
+{
+    grid-area: subt;
+    font-size: 26px;
+    padding: 10px 20px 40px 20px;
+    border-radius: 20px;
+    background: #e6d7bb;
+    box-shadow: inset 0px -30px 0px #ff9100;
+    border: 2px solid #F56300;
+}
+.box2
+{
+    display: grid;
+    grid-template-columns: 1.3fr 3fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    padding:40px 40px 80px 40px ;
+    grid-area: box2;
+    border-radius: 30px;
+    grid-template-areas: "img title" "img subt";
+    background: #f39455;
+    box-shadow: inset 0px -50px 0px #F56300;
+}
+.box2:hover
+{
+    transform: translate(0, 10px);
+    cursor: pointer;
+}
+
+footer
+{
+    height: 15vh;
+    margin: 50px 200px;
+    padding: 0px 50px 25px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 32px;
+    background-color: #00B2FF;
+    box-shadow: inset 0px -20px 0px #177cff;
+}
+footer p
+{
+    color: white;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 60px;
+    text-shadow: 0px 3px 0px #969696;
+    cursor: pointer;
+}
+footer p:hover
+{
+    transform: translate(0, 5px);
 }

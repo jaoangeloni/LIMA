@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100&family=Poppins&family=Roboto+Condensed:ital@0;1&family=Smooch&family=VT323&display=swap');
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body
+{
+    background-color: #0182b0;
+}
+header
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #04558A;
+    padding: 20px;
+}
+header div
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+}
+header a
+{
+    margin: 15px;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+header img
+{
+    width: 70px;
+    cursor: pointer;
+    margin:15px
+}
+main
+{
+    padding: 70px 50px;
+}
+
+
+
+#button
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0 0 50px;
+    border: #F8C304 3px solid;
+    color: #F8C304;
+    border-radius: 7px;
+    padding: 10px;
+    font-size: 20px;
+    width: 150px;
+    font-weight: bold;
+    cursor: pointer;
+}
+#form
+{
+    display: none;
+}
+#form:checked ~ #login
+{
+    display: flex;
+}
+#login
+{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #340763CC;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.form
+{
+    width: 464px;
+    height: 538px;
+    background-color: #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+.form input
+{
+    width: 400px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #6C117B;
+}
+.form div
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+.form div button
+{
+    padding: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#cancela
+{
+    color: #6C117B;
+    border: #6C117B 3px solid;
+}
+#enviar
+{
+    color: white;
+    background: #6C117B;
+    border: #6C117B 3px solid;
+}
+
+.card
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 0px 25px 0px;
+}
+.card p
+{
+    color: white;
+    font-size: 16px;
+}
+.card img
+{
+    width: 32px;
+    cursor: pointer;
+}
+#servidor
+{
+    width: 80px;
+    border-radius: 5px;
+}
