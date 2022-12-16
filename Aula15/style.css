@@ -198,7 +198,7 @@ main
     grid-area: box2;
     border-radius: 30px;
     grid-template-areas: "img title" "img subt";
-    background: #f39455;
+    background: #ff9249;
     box-shadow: inset 0px -50px 0px #F56300;
 }
 .box2:hover
@@ -206,7 +206,11 @@ main
     transform: translate(0, 10px);
     cursor: pointer;
 }
-
+.ref
+{
+    text-decoration: none;
+    color: black;
+}
 footer
 {
     height: 15vh;

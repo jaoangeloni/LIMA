@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz@9..144&family=Inter&family=JetBrains+Mono:wght@100&family=Montserrat&family=Poppins&family=Roboto+Condensed:ital@0;1&family=Smooch&family=VT323&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Inter', sans-serif;
+}
+body
+{
+    background-color:#2E2E2E;
+    
+}
+::-webkit-scrollbar {
+    display: none;
+}
+header
+{
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header img
+{
+    cursor: pointer;
+}
+header ul
+{
+    display: flex;
+    align-items: center;
+}
+header ul li
+{
+    margin-left: 40px;
+    font-size: 1.3rem;
+    color: #CFB53B;
+    border: 3px solid #CFB53B;
+    border-radius: 5px;
+    padding: 10px 15px 10px 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+ul li:hover
+{
+    color: #2E2E2E;
+    background-color: #CFB53B;
+}
+main
+{
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.card:hover
+{
+    background-color: #9999995e;
+}
+.text
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 500px;
+}
+.title
+{
+    font-weight: bold;
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 50px;
+}
+.excluir
+{
+    font-size: 1rem;
+    font-size: 700;
+    color: #FF5858;
+}
+.card img
+{
+    width: 250px;
+}

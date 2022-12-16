@@ -1,0 +1,245 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body
+{
+    background: linear-gradient(#7400b8 , #80ffdb);
+    display: flex;
+}
+main
+{
+    padding: 20px 50px;
+}
+header
+{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0px;
+}
+.menu
+{
+    width: 5vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(#80ffdb,#7400b8);
+    cursor: pointer;
+    z-index: 1000;
+}
+.menu img
+{
+    width: 40px;
+    margin: 20px 0;
+    cursor: pointer;
+    padding: 1px;
+    background-color: rgb(190, 190, 190);
+    border-radius: 10%;
+}
+.menu:hover ~ nav
+{
+    left: 3%;
+}
+
+nav
+{
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 20vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(#80ffdb,#7400b8);
+    transition: left 0.5s;
+}
+nav:hover
+{
+    left: 3%;
+}
+nav p
+{
+    padding-left: 10px;
+    font-size: 2rem;
+    margin: 21px 0;
+    cursor: pointer;
+    background-color: rgb(190, 190, 190);
+}
+.valores
+{
+    background-color: gray;
+    box-shadow: 0px 0.5rem 0px rgb(85, 85, 85);
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 23%;
+    cursor: pointer;
+}
+.valores:hover
+{
+    background: rgb(156, 156, 156);
+}
+.text
+{
+    font-size: 1.2rem;
+    color: white;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+.price
+{
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    text-align: right;
+}
+#pesquisa
+{
+    width: 100%;
+    margin: 20px 0px;
+}
+#pesquisa input
+{
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+
+}
+.content
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content img
+{
+    border-radius: 10px;
+    width: 100%;
+}
+.meses
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.meses p
+{
+    margin: 10px;
+    background-color: gray;
+    box-shadow: 0px 0.5rem 0px rgb(85, 85, 85);
+    border-radius: 10px;
+    font-size: 2rem;
+    color: white;
+    padding: 30px 40px;
+    width: 300px;
+    display: flex;
+    cursor: pointer;
+}
+.meses p:hover
+{
+    background: rgb(156, 156, 156);
+    box-shadow: 0px 0.5rem 0px rgb(85, 85, 85);
+}
+@media (max-width: 400px)
+{
+    main
+    {
+        padding: 10px 20px;
+    }
+    header
+    {
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin: 10px 0px;
+    }
+    .menu
+    {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 7vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: gray;
+        cursor: pointer;
+    }
+    nav
+    {
+        display: none;
+    }
+    .valores
+    {
+        background-color: gray;
+        padding: 20px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        cursor: pointer;
+        margin: 15px 0px;
+    }
+    .text
+    {
+        font-size: 1.2rem;
+        color: white;
+        font-weight: normal;
+        margin-bottom: 5px;
+    }
+    .price
+    {
+        font-size: 2rem;
+        font-weight: bold;
+        color: white;
+        text-align: right;
+    }
+    .content
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .content img
+    {
+        border-radius: 10px;
+        width: 100%;
+    }
+    .meses
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 10px;
+        padding-bottom: 100px;
+    }
+    .meses p
+    {
+        margin: 10px;
+        background-color: gray;
+        border-radius: 10px;
+        font-size: 1.5rem;
+        color: white;
+        padding: 30px 10px;
+        width: 40%;
+        display: flex;
+        cursor: pointer;
+    }
+}
